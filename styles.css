@@ -1,0 +1,388 @@
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Estilos para el texto y el fondo con tonos lavanda */
+body {
+  background-color: #dcd0ff; /* Fondo principal en tono lavanda */
+  color: #68589f; /* Color de texto en lavanda más oscuro */
+}
+
+/* Estilo para el fondo de la página principal */
+/* Estilo para la imagen de fondo */
+body::before {
+  content: "";
+  background-image: url("Cerca.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center; /* Centra la imagen horizontal y verticalmente */
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca la imagen detrás de los elementos de la página */
+  filter: grayscale(80%);
+}
+/* Anular la imagen de fondo en la página izquierda */
+body.pagina-izquierda::before {
+  content: none;
+}
+/* Anular la imagen de fondo en la página derecha */
+body.pagina-derecha::before {
+  content: none;
+}
+
+/* Estilo para el encabezado */
+#header {
+  color: #2e225b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px; /* Ajusta la separación desde el margen superior */
+  font-family: "Livvic", sans-serif;
+  background-color: transparent;
+}
+/* Estilo para el título */
+#fecha-container {
+  text-align: center;
+  margin: 0 20px;
+}
+#fecha {
+  font-size: 60px;
+  display: inline-block;
+}
+.negrita {
+  font-weight: 700;
+}
+/* Estilo para las líneas horizontales */
+.linea-horizontal {
+  height: 3px;
+  background-color: white;
+  width: 130px;
+  margin: 0 10px;
+}
+/* Estilo para los nombres de los novios */
+#nombres {
+  border-radius: 10px; /* Redondea los bordes del contenedor */
+  padding: 20px; /* Aumenta el espacio alrededor de los nombres */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Tangerine", cursive;
+  margin: 150px auto 250px auto;
+}
+
+#novio {
+  font-size: 180px;
+}
+#ampersand {
+  font-size: 160px;
+}
+#novia {
+  font-size: 180px;
+}
+
+/* Estilo para el contenedor del texto y el botón */
+#contenedor-texto-boton {
+  text-align: center;
+  position: relative;
+}
+
+/* Estilo para el texto "Nos casamos" */
+#texto-casamos {
+  font-family: "Cookie", cursive;
+  font-size: 120px;
+  text-align: center;
+  color: #2e225b; /* Color del texto principal en tono lavanda más oscuro */
+  margin-top: 450px;
+}
+
+/* Estilo para el botón "ASISTIR" */
+
+#boton-asistir {
+  text-align: center;
+  margin-top: 40px; /* Ajusta según sea necesario */
+}
+
+#boton-asistir a {
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: #a57cff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Livvic", sans-serif;
+  font-size: 40px;
+}
+
+#boton-asistir a:hover {
+  background-color: #9059b0; /* Color de fondo cuando se pasa el mouse */
+}
+
+/* Estilo para las flechas */
+#flecha-izquierda,
+#flecha-derecha {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#flecha-izquierda {
+  left: 50px;
+}
+#flecha-derecha {
+  right: 50px;
+}
+
+/* Estilo para la página derecha */
+#derecha-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Livvic", sans-serif;
+  font-weight: 700;
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+#mapa-container {
+  margin: 40px 0 5px 0;
+  z-index: -1;
+  width: 100%; /* Ajusta el ancho para ocupar toda la pantalla */
+  border-radius: 25px; /* Añade bordes redondeados al mapa */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#direccion {
+  font-family: "Livvic", sans-serif;
+  text-align: center;
+  font-size: 35px;
+  line-height: 1; /* Ajusta el interlineado */
+  margin-top: 20px; /* Ajusta el margen superior */
+}
+
+#direccion p:nth-child(1) {
+  font-size: 50px; /* Tamaño más grande para "Salon Bernardina" */
+  font-weight: bold; /* Texto en negrita para "Salon Bernardina" */
+  color: #2e225b;
+}
+
+/* Estilo para los iconos en los enlaces */
+i.fi {
+  font-size: 60px; /* Tamaño deseado en píxeles */
+}
+/* Estilo para los enlaces de iconos */
+i.fi {
+  color: #2e225b; /* Color deseado para los iconos */
+}
+
+/* Estilo para contador */
+.contador {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #dcd0ff; /* Cambia el fondo del contador */
+  border-radius: 15px; /* Añade bordes redondeados al contador */
+  padding: 35px; /* Aumenta el relleno para más cercanía entre los números */
+  width: 70%;
+  margin: 20px auto; /* Margen superior e inferior de 50px y centrado horizontalmente */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.time-container {
+  text-align: center;
+}
+
+.time {
+  font-size: 3.5em; /* Aumenta el tamaño de la fuente de los números */
+  font-weight: bold;
+  margin-bottom: 5px; /* Reducción del espacio entre los números y las etiquetas */
+  transition: all 0.3s;
+}
+
+.time-label {
+  font-size: 1em;
+  color: #555;
+  padding: 5px 0; /* Ajusta el espacio vertical entre las etiquetas */
+}
+
+#texto-falta {
+  text-align: center;
+  font-family: "Livvic", sans-serif;
+  font-size: 40px;
+  color: #2e225b;
+  margin-top: 70px; /* Ajusta según necesites */
+}
+
+#google-calendar-button {
+  text-align: center;
+  margin-top: 40px; /* Ajusta según sea necesario */
+}
+
+#google-calendar-button a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #a57cff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Livvic", sans-serif;
+  font-size: 24px;
+}
+
+#google-calendar-button a:hover {
+  background-color: #9059b0; /* Color de fondo cuando se pasa el mouse */
+}
+
+.contenedor-con-imagen {
+  border-radius: 30px;
+  margin-top: 10%;
+  position: relative;
+  z-index: -1; /* Coloca la imagen detrás de los elementos de la página */
+}
+
+.contenedor-con-imagen img {
+  border-radius: 30px;
+  height: 100%;
+  opacity: 0.7; /* Ajusta el valor según el nivel de transparencia que desees */
+  filter: grayscale(40%);
+}
+
+/* Estilo para el botón de pago */
+#boton-pago {
+  text-align: center;
+  margin-top: 40px; /* Ajusta según sea necesario */
+}
+
+#boton-pago a {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #a57cff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-family: "Livvic", sans-serif;
+  font-size: 24px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#boton-pago a:hover {
+  background-color: #9059b0;
+  transform: scale(1.05);
+}
+
+#google-calendar-button a:hover {
+  background-color: #9059b0; /* Color de fondo cuando se pasa el mouse */
+}
+
+/* Ajustes para pantallas grandes (mayores a 1200px) */
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 1.2vw; /* Tamaño de fuente base relativo */
+  }
+
+  body::before {
+    content: "";
+    background-image: url("Cerca.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center; /* Centra la imagen horizontal y verticalmente */
+    opacity: 0.7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca la imagen detrás de los elementos de la página */
+    filter: grayscale(80%);
+  }
+
+  /* Estilo para el título */
+  #fecha-container {
+    text-align: center;
+    margin: 0 2%; /* Ajusta el margen lateral */
+  }
+
+  #fecha {
+    font-size: 30px; /* Tamaño de fuente para la fecha */
+    display: inline-block;
+  }
+
+  /* Estilo para las líneas horizontales */
+  .linea-horizontal {
+    height: 2px; /* Ajusta la altura de las líneas */
+    background-color: white;
+    width: 100px; /* Ajusta el ancho de las líneas */
+    margin: 0 1%; /* Ajusta el margen lateral de las líneas */
+  }
+
+  /* Estilo para los iconos en los enlaces */
+  i.fi {
+    font-size: 40px; /* Tamaño deseado en píxeles */
+  }
+
+  /* Estilo para el texto "Nos casamos" en la página principal */
+  #texto-casamos {
+    font-size: 4vw; /* Tamaño de fuente relativo */
+    margin-top: 2vh;
+  }
+
+  /* Estilo para los nombres de los novios */
+  #nombres {
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Tangerine", cursive;
+    margin: 2% auto; /* Ajusta según tus necesidades */
+  }
+
+  #novio,
+  #ampersand,
+  #novia {
+    font-size: 90px; /* Tamaño de fuente para los nombres */
+  }
+
+  /* Estilo para el botón "ASISTIR" */
+  #boton-asistir {
+    text-align: center;
+    margin-top: 20px; /* Ajusta según sea necesario */
+  }
+
+  #boton-asistir a {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+
+  #mapa-container {
+    margin: 20px 0 5px 0;
+    width: 100%; /* Ajusta el ancho para ocupar toda la pantalla */
+  }
+  #direccion {
+    font-size: 25px;
+  }
+  #direccion p:nth-child(1) {
+    font-size: 25px; /* Tamaño más grande para "Salon Bernardina" */
+  }
+
+  .contenedor-con-imagen {
+    display: none; /* Oculta la imagen en pantallas grandes */
+  }
+  #boton-pago {
+    text-align: center;
+    margin-top: 20px; /* Ajusta según sea necesario */
+  }
+}

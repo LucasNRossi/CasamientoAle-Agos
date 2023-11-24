@@ -1,0 +1,79 @@
+/* Estilos específicos para la página de instrucciones */
+body.pagina-instrucciones {
+  background-color: #dcd0ff; /* Fondo principal en tono lavanda */
+  color: #68589f; /* Color de texto en lavanda más oscuro */
+}
+
+#header {
+  color: #2e225b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  font-family: "Livvic", sans-serif;
+  background-color: transparent;
+}
+
+#fecha-container {
+  text-align: center;
+  margin: 0 20px;
+}
+
+#fecha {
+  font-size: 60px;
+  display: inline-block;
+}
+
+.negrita {
+  font-weight: 700;
+}
+
+.linea-horizontal {
+  height: 3px;
+  background-color: #fff; /* Cambiado a blanco para que sea visible en el fondo oscuro */
+  width: 130px;
+  margin: 0 10px;
+}
+
+#content {
+  font-family: "Livvic", sans-serif;
+  text-align: center;
+  margin: 50px;
+}
+
+.pagina-instrucciones h1 {
+  font-size: 1.5em;
+  color: #2e225b;
+  margin-top: 50px;
+}
+
+.pagina-instrucciones p {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+/* Ajustes para pantallas grandes (mayores a 1200px) */
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 1.2vw; /* Tamaño de fuente base relativo */
+  }
+
+  /* Estilo para el título */
+  #fecha-container {
+    text-align: center;
+    margin: 0 2%; /* Ajusta el margen lateral */
+  }
+
+  #fecha {
+    font-size: 30px; /* Tamaño de fuente para la fecha */
+    display: inline-block;
+  }
+
+  /* Estilo para las líneas horizontales */
+  .linea-horizontal {
+    height: 2px; /* Ajusta la altura de las líneas */
+    background-color: white;
+    width: 100px; /* Ajusta el ancho de las líneas */
+    margin: 0 1%; /* Ajusta el margen lateral de las líneas */
+  }
+}

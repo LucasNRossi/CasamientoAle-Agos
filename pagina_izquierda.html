@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Agendame</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Livvic:wght@400;700&family=Cookie&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap");
+    </style>
+  </head>
+  <body class="pagina-izquierda">
+    <!-- Contenido de la página izquierda -->
+    <div id="header">
+      <div class="linea-horizontal"></div>
+      <div id="fecha-container">
+        <span id="fecha">27<span class="negrita">ABRIL</span>24</span>
+      </div>
+      <div class="linea-horizontal"></div>
+    </div>
+    <div id="texto-falta">SOLO FALTAN...</div>
+
+    <div class="contador">
+      <div class="time-container">
+        <div id="dias" class="time"></div>
+        <div class="time-label">Días</div>
+      </div>
+      <div class="time-container">
+        <div id="horas" class="time"></div>
+        <div class="time-label">Horas</div>
+      </div>
+      <div class="time-container">
+        <div id="minutos" class="time"></div>
+        <div class="time-label">Minutos</div>
+      </div>
+      <div class="time-container">
+        <div id="segundos" class="time"></div>
+        <div class="time-label">Segundos</div>
+      </div>
+    </div>
+
+    <!-- Contenedor para el contador -->
+    <div id="flecha-derecha">
+      <a href="index.html">
+        <i class="fi fi-bs-home"></i>
+        <!-- Icono de casa -->
+        <i class="fi fi-rs-angle-small-right"></i>
+        <!-- Flecha a la derecha -->
+      </a>
+    </div>
+
+    <div id="google-calendar-button">
+      <a
+        href="http://www.google.com/calendar/event?action=TEMPLATE&text=Casamiento+de+Alexis+y+Agostina&dates=20240427T190000/20240428T050000&details=¡No+te+pierdas+este+evento!&location=Salón+Bernardina"
+        target="_blank"
+      >
+        AGENDAR EVENTO
+      </a>
+      <!-- Contenedor con la imagen recortada -->
+      <div class="contenedor-con-imagen">
+        <img src="/Italia.jpg" alt="Imagen Alexis y Agos en el Coliseo" />
+      </div>
+    </div>
+    <!-- Contenedor para el botón de pago -->
+    <div id="boton-pago">
+      <a href="pagina_de_instrucciones.html" target="_blank">
+        INSTRUCCIONES DE PAGO
+      </a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
